@@ -31,15 +31,6 @@
                iyy="0.0001" iyz="0.0"
                izz="0.0001"/>
     </inertial>
-
-    <!-- Plugin to apply the force -->
-    <gazebo>
-      <plugin name="ignition::gazebo::systems::ApplyLinkWrench" 
-              filename="libignition-gazebo-apply-link-wrench-system.so">
-        <link_name>connector_link</link_name>
-        <topic>/moving_cube/connect_robot/connector_link/wrench</topic>
-      </plugin>
-    </gazebo>
   </link>
 
   <!-- Define a joint if needed -->
